@@ -1,0 +1,16 @@
+{
+  "users": [
+    {
+      "name": "Sage Klein",
+      "email": "sage@sagerules.com",
+      "password": "sage",
+      "id": 1
+    },
+    {
+      "name": "Colin Klein",
+      "email": "colin@klein.colinklein",
+      "password": "colinklein",
+      "id": 2
+    }
+  ]
+}

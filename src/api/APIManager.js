@@ -4,14 +4,14 @@ whose sole responsibility is to interact with the API.*/
 const remoteURL = "http://localhost:5002";
 
 export default {
-	get(resource) {
-		return fetch(`${remoteURL}/${resource}/`).then(result =>
+	get(resource, id) {
+		return fetch(`${remoteURL}/${resource}/${id}`).then(result =>
 			result.json()
 		);
 	},
-	getAll(resource, id) {
+	getAll(resource, userId) {
 		return fetch(
-			`http://localhost:5002/${resource}?userId=${id}&_sort=timeStamp`
+			`http://localhost:5002/${resource}?userId=${userId}&_sort=timeStamp`
 		).then(result => result.json());
 	},
 
@@ -49,7 +49,7 @@ export default {
 			headers: {
 				"Content-Type": "application/json"
 			},
-			body: JSON.stringify( )
+			body: JSON.stringify()
 		}).then(data => data.json());
 	},
 	put(resource) {
@@ -58,7 +58,7 @@ export default {
 			headers: {
 				"Content-Type": "application/json"
 			},
-			body: JSON.stringify( )
+			body: JSON.stringify()
 		}).then(data => data.json());
 	}
 };
