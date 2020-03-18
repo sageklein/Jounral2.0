@@ -1,0 +1,56 @@
+small {
+  font-size: 60%;
+}
+
+header {
+  background-color: #3b2f3f;
+  border: 90749b solid 3px;
+}
+
+.site-title {
+  font-family: sans-serif;
+  font-weight: 100;
+  color: ghostwhite;
+  text-align: center;
+  font-size: 2em;
+  color: #cfcfea;
+}
+
+nav .container {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  margin-bottom: 0;
+}
+
+nav .container li {
+  flex: 1;
+  font-style: tahoma;
+  text-align: center;
+  font-size: 1.2em;
+  color: #b991c9;
+  box-sizing: border-box;
+  background-color: #92769e;
+  list-style-type: none;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+nav .container a {
+  color: #cfcfea;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+nav .container a:hover {
+  color: ghostwhite;
+  cursor: pointer;
+  text-decoration: none;
+}
+nav span {
+  cursor: pointer;
+  text-decoration: none;
+}
+nav span:hover {
+  color: #92769e;
+}

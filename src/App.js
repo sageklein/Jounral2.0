@@ -3,14 +3,14 @@
 
 //<Dashboard.js> renders the <NavBar> and <ApplicationViews> 
 import React, { Component } from 'react'
-import ApplicationViews from '../src/components/ApplicationViews'
-import NavBar from '../src/components/NavBar'
+import EntryList from '../src/components/entries/EntryList'
+import NavBar from '../src/components/navbar/NavBar'
 import '../src/index.css'
 // import Dashboard from './components/dashboard/Dashboard'
 
 //Components are the building blocks of any React app and a typical React app will have many of these. Simply put, a component is a JavaScript class or function that optionally accepts inputs i.e. properties(props) and returns a React element that describes how a section of the UI (User Interface) should appear.
 
-class Storage extends Component {
+class App extends Component {
 	//On startup, there is no user (user: false)
 	state = {
 		user: sessionStorage.getItem("userId") !== null
@@ -30,18 +30,13 @@ class Storage extends Component {
 		return (
 			<>
 				<NavBar
-					user={this.state.user}
-					isAuthenticated={this.isAuthenticated}
-					clearUser={this.clearUser}
 				/>
 
-				<ApplicationViews
-					user={this.state.user}
-					isAuthenticated={this.isAuthenticated}
+				<EntryList
 				/>
 			</>
 		);
 	}
 }
 
-export default Storage;
+export default App;
