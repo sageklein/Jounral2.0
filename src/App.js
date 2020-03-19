@@ -3,7 +3,7 @@
 
 //<Dashboard.js> renders the <NavBar> and <ApplicationViews> 
 import React, { Component } from 'react'
-import EntryList from '../src/components/entries/EntryList'
+import EntryForm from '../src/components/entries/EntryForm'
 import NavBar from '../src/components/navbar/NavBar'
 import '../src/index.css'
 // import Dashboard from './components/dashboard/Dashboard'
@@ -32,7 +32,7 @@ class App extends Component {
 				<NavBar
 				/>
 
-				<EntryList
+				<EntryForm
 				/>
 			</>
 		);

@@ -41,7 +41,7 @@ class EntryList extends Component {
 						type="button"
 						className="btn"
 						onClick={() => {
-							this.props.history.push("/entries/new");
+							this.props.history.push("/entryCard");
 						}}
 					>
 						Submit

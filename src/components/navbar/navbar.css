@@ -3,24 +3,23 @@ small {
 }
 
 header {
-  background-color: #3b2f3f;
-  border: 90749b solid 3px;
+  background-color: #A8C7BB;
+  /* border: #A8C7BB solid 1px; */
 }
 
-.site-title {
+.siteTitle {
   font-family: sans-serif;
   font-weight: 100;
-  color: ghostwhite;
   text-align: center;
   font-size: 2em;
-  color: #cfcfea;
+  color: #393E41;
 }
 
 nav .container {
   display: flex;
   flex-wrap: wrap;
   padding: 0;
-  margin-bottom: 0;
+  margin-bottom: 3em;
 }
 
 nav .container li {
@@ -28,22 +27,21 @@ nav .container li {
   font-style: tahoma;
   text-align: center;
   font-size: 1.2em;
-  color: #b991c9;
   box-sizing: border-box;
-  background-color: #92769e;
+  background-color: #EEC8E0;
   list-style-type: none;
   cursor: pointer;
   text-decoration: none;
 }
 
 nav .container a {
-  color: #cfcfea;
+  color: #404040;
   cursor: pointer;
   text-decoration: none;
 }
 
 nav .container a:hover {
-  color: ghostwhite;
+  color: #404040;
   cursor: pointer;
   text-decoration: none;
 }
@@ -52,5 +50,5 @@ nav span {
   text-decoration: none;
 }
 nav span:hover {
-  color: #92769e;
+  color: #404040;
 }

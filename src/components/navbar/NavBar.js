@@ -11,47 +11,25 @@ class NavBar extends Component {
 		return (
 			<header>
 				<h1 className="siteTitle">
-					Journal
+					JOURNAL
 					<br />
-					<small>Where life meets paper.</small>
+					<small>where life meets paper</small>
 				</h1>
 				<nav>
 					<ul className="container">
 						<li>
-							<Link className="nav-link" to="/">
-								Home
+							<Link className="nav-link" to="/entryList">
+								All Entries
 							</Link>
 						</li>
-						{this.props.user ? (
-							<>
-								<li>
-									<Link className="nav-link" to="/entries">
-										{" "}
-										Entries
-									</Link>
-								</li>
-								<li>
-									<span
-										className="nav-link"
-										onClick={this.handleLogout}
-									>
-										Logout
-									</span>
-								</li>
-							</>
-						) : (
-							<li>
-								<span
-									className="nav-link"
-									onClick={this.handleLogout}
-								>
-									Logout
-								</span>
-							</li>
-						)}
 						<li>
-							<Link className="nav-link" to="/login">
-								Login
+							<Link className="nav-link" to="/entryForm">
+								New Entry
+							</Link>
+						</li>
+						<li>
+							<Link className="nav-link" to="/entrySearch">
+								Search Entries
 							</Link>
 						</li>
 					</ul>

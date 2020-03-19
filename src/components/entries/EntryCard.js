@@ -16,9 +16,9 @@ class EntryCard extends Component {
 					</picture>
 					<h3>
 						Title:{" "}
-						<span className="cardTitle">
+						<div className="cardTitle">
 							{firstLetterCase(this.props.entry.title)}
-						</span>
+						</div>
 					</h3>
 					<p>Date: {this.props.entry.date}</p>
 					<Link to={`/entries/${this.props.entry.id}`}>

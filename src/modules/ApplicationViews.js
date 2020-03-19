@@ -27,21 +27,28 @@ export default class ApplicationViews extends Component {
 			/>
 			<Route
 				exact
-				path="/EntryCard"
+				path="/entryCard"
 				render={props => {
 					return <EntryCard {...props} />;
 				}}
 			/>
 			<Route
 				exact
-				path="/EntryDetail"
+				path="/entryDetails"
 				render={props => {
-					return <EntryDetail {...props} />;
+					return <EntryDetails {...props} />;
 				}}
 			/>
 			<Route
 				exact
-				path="/EntryList"
+				path="/entryForm"
+				render={props => {
+					return <EntryForm {...props} />;
+				}}
+			/>
+			<Route
+				exact
+				path="/entryList"
 				render={props => {
 					return <EntryList {...props} />;
 				}}

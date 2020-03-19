@@ -3,23 +3,15 @@
 
 /*Typography
 --------------------------------------------------------------*/
-body,
-button,
-input,
-select,
-textarea {
+button {
   color: #404040;
   font-family: "Comfortaa", Arial, sans-serif;
   font-size: 20px;
-  line-height: 1.5;
+  line-height: 1.8;
+  width: 5.5em;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1 {
   font-family: "Patua One", serif;
   letter-spacing: 2px;
 }
@@ -30,15 +22,19 @@ p {
   color: #171319;
 }
 
-strong {
-  font-weight: bold;
+.entryTitle .entryText {
+  font-family: "Patua One", serif;
+  letter-spacing: 3px;
+  font-size: 30px;
+  padding: 1 1 1 1em;
 }
 
-address {
-  font-family: Tahoma;
-  letter-spacing: 2px;
+.entry .title {
+  font-family: "Patua One", serif;
+  letter-spacing: 3px;
   font-size: 30px;
   margin: 0 0 0.5em;
+  min-height: 30em;
 }
 
 img {
@@ -48,12 +44,13 @@ img {
   height: auto;
 }
 
-.section-content {
+.sectionContent {
   padding: 1.4em;
 }
 
-.containerCards {
+.containerCard {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  flex-direction: column;
+  justify-content: space-around;
 }
